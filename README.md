@@ -148,3 +148,7 @@ Pronto! Sua aplicação estará funcionando localmente.
 [Ecobyters pitch.pdf](https://github.com/user-attachments/files/18049613/Ecobyters.pitch.pdf)
 ![image](https://github.com/user-attachments/assets/05e2b86a-7f22-4bd6-84dc-61a4474190a7)
 
+![bronze_seal](https://github.com/user-attachments/assets/c1e5507c-6c54-4058-b62b-42bd079aeea0)
+![silver_seal](https://github.com/user-attachments/assets/28cd42ad-7f1e-4a18-92c1-94b3b9855871)
+![gold_seal](https://github.com/user-attachments/assets/1e024c8b-4845-44d2-af34-09efc11ef29d)
+
