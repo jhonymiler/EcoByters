@@ -146,3 +146,5 @@ npx prisma migrate dev --name init
 Pronto! Sua aplicação estará funcionando localmente.
 
 [Ecobyters pitch.pdf](https://github.com/user-attachments/files/18049613/Ecobyters.pitch.pdf)
+![image](https://github.com/user-attachments/assets/05e2b86a-7f22-4bd6-84dc-61a4474190a7)
+
