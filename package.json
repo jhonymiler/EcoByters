@@ -1,0 +1,41 @@
+{
+  "name": "green-business",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "prisma migrate dev && node server.js",
+    "debug": "prisma migrate dev && node --inspect=0.0.0.0:9229 server.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@openzeppelin/contracts": "^4.9.6",
+    "@prisma/client": "^5.20.0",
+    "@rainbow-me/rainbowkit": "^2.1.7",
+    "@tanstack/react-query": "^5.59.9",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "http": "^0.0.1-security",
+    "next": "14.2.15",
+    "next-auth": "^4.24.8",
+    "prisma": "^5.20.0",
+    "react": "^18",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18",
+    "react-toastify": "^10.0.5",
+    "viem": "^2.21.22",
+    "wagmi": "^2.12.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "eslint-plugin-prettier": "^5.2.1",
+    "typescript": "^5"
+  }
+}
