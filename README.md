@@ -144,3 +144,5 @@ npx prisma migrate dev --name init
 - Abra o navegador e acesse o seguinte endereço: [http://localhost:3000](http://localhost:3000)
 
 Pronto! Sua aplicação estará funcionando localmente.
+
+[Ecobyters pitch.pdf](https://github.com/user-attachments/files/18049613/Ecobyters.pitch.pdf)
