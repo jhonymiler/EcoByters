@@ -1,0 +1,36 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model business {
+  id          Int      @id @default(autoincrement())
+  companyType String
+  companyName String
+  email       String
+  phone       String
+  city        String
+  address     String
+  state       String
+  hash        String
+  createdAt   DateTime @default(now())
+
+  seals       seal[]   // Adiciona essa linha para criar a relação inversa
+}
+
+model seal {
+  id          Int     @id @default(autoincrement())
+  business_id Int
+  level       String
+  token_id    String
+  image       String  
+  createdAt   DateTime @default(now())
+
+  business business @relation(fields: [business_id], references: [id])
+}
