@@ -80,7 +80,7 @@ export default function Home(props: InferGetServerSidePropsType<typeof getServer
             </>
           ) : (
             <>
-              <Header></Header>
+              <Header/>
               <Container className="mt-5">
                 <h2>Lista de Empresas Certificadas</h2>
                 <ListBusiness companyType='geradora' />
