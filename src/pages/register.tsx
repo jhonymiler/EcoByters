@@ -18,29 +18,27 @@ export default function Home(props: InferGetServerSidePropsType<typeof getServer
 
     return (
         <>
-            <Container className="mt-5">
-                <Row className="mt-5 mb-2">
-                    {session ? (
-                        <>
-                            <h2>{session.user.name}</h2>
-                            {isLoading ? (
-                                <p>Carregando balanço...</p>
-                            ) : isError ? (
-                                <p>Erro ao carregar balanço.</p>
-                            ) : (
-                                <p>Seu saldo: {getFormattedBalance(balance) || '0.00'} Tons</p>
-                            )}
-                            <h1>Cadastro de empresa</h1>
-                            <Register />
-                        </>
+
+            {session ? (
+                <>
+                    <h2>{session.user.name}</h2>
+                    {isLoading ? (
+                        <p>Carregando balanço...</p>
+                    ) : isError ? (
+                        <p>Erro ao carregar balanço.</p>
                     ) : (
-                        <>
-                            <h1>Empresa Verde</h1>
-                            <p>Conecte sua Carteira</p>
-                        </>
+                        <p>Seu saldo: {getFormattedBalance(balance) || '0.00'} Tons</p>
                     )}
-                </Row>
-            </Container>
+                    <h1>Cadastro de empresa</h1>
+                    <Register />
+                </>
+            ) : (
+                <>
+                    <h1>Empresa Verde</h1>
+                    <p>Conecte sua Carteira</p>
+                </>
+            )}
+
         </>
     );
 }
